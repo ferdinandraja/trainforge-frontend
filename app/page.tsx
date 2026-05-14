@@ -10,21 +10,6 @@ export default function LandingPage() {
           <span className="text-2xl font-bold">TrainForge</span>
         </div>
 
-        <div className="flex gap-4">
-          <Link
-            href="/login"
-            className="px-5 py-3 rounded-xl hover:bg-white/10 transition"
-          >
-            Login
-          </Link>
-
-          <Link
-            href="/trainer-signup"
-            className="px-5 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 transition"
-          >
-            Sign Up
-          </Link>
-        </div>
       </nav>
 
       <section className="max-w-7xl mx-auto px-6 py-24 grid lg:grid-cols-2 gap-16 items-center">
