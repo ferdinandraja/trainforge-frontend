@@ -1,7 +1,11 @@
 import axios from "axios";
 
+const baseURL =
+  process.env.NEXT_PUBLIC_API_BASE_URL ||
+  "http://127.0.0.1:8000/api/";
+
 const API = axios.create({
-  baseURL: process.env.NEXT_PUBLIC_API_BASE_URL,
+  baseURL,
 });
 
 API.interceptors.request.use((config) => {
@@ -15,5 +19,7 @@ API.interceptors.request.use((config) => {
 
   return config;
 });
+
+console.log("API base URL:", baseURL);
 
 export default API;
